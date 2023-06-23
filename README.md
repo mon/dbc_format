@@ -1,6 +1,7 @@
 # DBC Format
 
-An opinionated formatter for Vector DBC files, using the `cantools` library.
+An opinionated formatter for Vector DBC files, using the
+[cantools](https://github.com/cantools/cantools/) library.
 
 ## Usage:
 ```
@@ -56,9 +57,9 @@ BO_ 1111 Voltage: 8 Car
 Formatted:
 ```dbc
 BO_ 1111 Voltage: 8 Car
- SG_ VoltageNumber M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ VoltageMux M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Voltage1 m0 : 32|32@1- (1,0) [0|0] "V" Vector__XXX
- SG_ VoltageMux m1 : 32|32@1- (1,0) [0|0] "V" Vector__XXX
+ SG_ Voltage2 m1 : 32|32@1- (1,0) [0|0] "V" Vector__XXX
 ```
 
 ### Value tables
